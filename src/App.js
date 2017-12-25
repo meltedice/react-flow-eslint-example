@@ -1,13 +1,21 @@
-import React, { Component } from 'react'
+// @flow
 
-import sayHelloTo from './hello'
-import { sayHelloToJack, sayHelloToNumber } from './hello2'
+import React, { Component } from 'react'
 
 import logo from './logo.svg'
 import './App.css'
 
-class App extends Component {
+type Props = {
+  message1: string,
+  message2: string,
+  message3: string,
+  myNumber1: number,
+}
+
+class App extends Component<Props> {
   render() {
+    const { message1, message2, message3, myNumber1 } = this.props
+
     return (
       <div className="App">
         <header className="App-header">
@@ -17,9 +25,10 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
           <ul>
-            <li>{sayHelloTo('Mike')}</li>
-            <li>{sayHelloToJack()}</li>
-            <li>{sayHelloToNumber(33)}</li>
+            <li>{message1}</li>
+            <li>{message2}</li>
+            <li>{message3}</li>
+            <li>{myNumber1}</li>
           </ul>
         </p>
       </div>

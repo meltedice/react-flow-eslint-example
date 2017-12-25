@@ -11,6 +11,8 @@ export const sayHelloToNumber = (number: number): string => {
   return sayHelloTo(`${number}`)
 }
 
+/*
+
 // OK
 sayHelloToNumber(44)
 
@@ -61,3 +63,5 @@ let a: AType
 //   Error: src/hello2.js:33
 //    33: let a: AType
 //               ^^^^^ AType. Could not resolve name
+
+ */
