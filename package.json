@@ -14,7 +14,12 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "babel-eslint": "^8.1.0",
+    "babel-plugin-syntax-flow": "^6.18.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-flow": "^6.23.0",
     "eslint": "^4.13.1",
+    "eslint-plugin-flowtype": "^2.40.1",
     "eslint-plugin-react": "^7.5.1",
     "flow-bin": "^0.61.0"
   }
