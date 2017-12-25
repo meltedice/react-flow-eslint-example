@@ -29,8 +29,15 @@
     "quotes": ["error", "single"],
     "semi": ["error", "never"],
     "no-console": "off",
+    "no-undef": "warn",
+    "no-unused-vars": "warn",
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
     "react/react-in-jsx-scope": "error"
+  },
+  "settings": {
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": true
+    }
   }
 }
